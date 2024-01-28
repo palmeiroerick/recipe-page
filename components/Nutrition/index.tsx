@@ -4,18 +4,26 @@ import SubTitle from "../SubTitle";
 import Text from "../Text";
 
 const Nutrient = ({ children }: GenericChildren) => {
-  return <div className="my-3 ml-8 flex w-48 justify-between">{children}</div>;
+  return (
+    <div className="my-3 ml-8 flex w-48 justify-between lg:w-[22rem]">
+      {children}
+    </div>
+  );
 };
 
 const Value = ({ children }: GenericChildren) => {
-  return <span className="w-16 font-outfit font-semibold text-darkRaspberry">{children}</span>;
+  return (
+    <span className="w-16 font-outfit font-semibold text-nutmeg">
+      {children}
+    </span>
+  );
 };
 
 const Nutrition = () => {
   return (
     <section className="flex flex-col gap-3">
       <SubTitle>Nutrition</SubTitle>
-      <div/>
+      <div />
       <Text>
         The table below shows nutritional values per serving without the
         additional fillings.
