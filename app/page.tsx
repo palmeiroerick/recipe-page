@@ -9,9 +9,9 @@ import Title from "@/components/Title";
 
 const Home = () => {
   return (
-    <main className="w-[23.438rem] bg-white">
+    <main className="w-[23.438rem] rounded-3xl bg-white lg:my-28 lg:w-[45rem]">
       <Omelette />
-      <div className="flex flex-col gap-6 p-8">
+      <div className="flex flex-col gap-6 p-8 lg:gap-7 lg:p-10">
         <Title>Simple Omelette Recipe</Title>
         <Text>
           An easy and quick dish, perfect for any meal. This classic omelette
