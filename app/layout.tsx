@@ -14,7 +14,7 @@ const RootLayout = ({
 }>) => {
   return (
     <html lang="en" className={`${youngSerif.variable} ${outfit.variable}`}>
-      <body>{children}</body>
+      <body className="flex flex-col items-center bg-eggshell">{children}</body>
     </html>
   );
 };
